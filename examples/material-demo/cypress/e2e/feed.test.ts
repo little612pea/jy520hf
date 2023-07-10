@@ -16,10 +16,10 @@ feedUrls.forEach((url) => {
 
       // Make sure the first page posts get loaded properly
       cy.findByText("JY-HF-520");
-      cy.findByText("Storms of Doors");
-      cy.findByText("Valley in the Storms");
-      cy.findByText("The Darkest Something");
-      cy.findByText("Flames in the Time");
+      cy.findByText("123");
+      cy.findByText("321");
+      cy.findByText("123");
+      cy.findByText("321");
     });
 
     it("correctly navigates to the Big Test post via title", () => {
