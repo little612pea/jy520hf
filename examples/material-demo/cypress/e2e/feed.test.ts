@@ -15,7 +15,7 @@ feedUrls.forEach((url) => {
       cy.get("@feed").children().should("have.length", PAGE_POST_COUNT);
 
       // Make sure the first page posts get loaded properly
-      cy.findByText("Big Test");
+      cy.findByText("JY-HF-520");
       cy.findByText("Storms of Doors");
       cy.findByText("Valley in the Storms");
       cy.findByText("The Darkest Something");
@@ -23,7 +23,7 @@ feedUrls.forEach((url) => {
     });
 
     it("correctly navigates to the Big Test post via title", () => {
-      cy.findByText("Big Test").click();
+      cy.findByText("三月的考验").click();
       cy.waitForRouteChange();
 
       cy.url().should("contain", "/big-sample-test");
